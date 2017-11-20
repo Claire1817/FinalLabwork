@@ -10,6 +10,25 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LoginPage } from '../pages/login/login';
+
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from 'angularfire2';
+import { Facebook } from '@ionic-native/facebook'
+
+/* 
+Pierre Munin 1106420
+Claire Gizard 1106363
+ */
+
+var firebaseConfig = {
+  apiKey: "AIzaSyDHXPOevL35ZPZx25lrrhMTeMgpmlRv3Bs",
+  authDomain: "labwork5-bfcb8.firebaseapp.com",
+  databaseURL: "https://labwork5-bfcb8.firebaseio.com",
+  projectId: "labwork5-bfcb8",
+  storageBucket: "labwork5-bfcb8.appspot.com",
+  messagingSenderId: "625626025533"
+};
 
 @NgModule({
   declarations: [
@@ -17,11 +36,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,10 +51,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
+    Facebook,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
