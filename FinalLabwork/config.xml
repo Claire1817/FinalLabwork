@@ -85,4 +85,5 @@
         <variable name="APP_ID" value="478767959190246" />
         <variable name="APP_NAME" value="Labwork8" />
     </plugin>
+    <engine name="android" spec="~6.2.3" />
 </widget>
