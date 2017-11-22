@@ -43,11 +43,11 @@ export class LoginPage {
    */
     console.log(e);
   }
-}
+  }
 /**
  * function to login with facebook
  */
-  public loginWithFacebook() {
+  /**public loginWithFacebook() {
     this.facebook.login(['email']).then( (response) => {
       const facebookCredential = firebase.auth.FacebookAuthProvider
         .credential(response.authResponse.accessToken);
@@ -63,5 +63,5 @@ export class LoginPage {
       });
 
     }).catch((error) => { console.log("ERROR" + error) });
-  }
+  }*/
 }
