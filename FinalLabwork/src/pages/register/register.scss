@@ -1,3 +1,50 @@
 page-register {
+    .bg-image {
+        background-image: url('../assets/imgs/fondbleu.png');
+        background-size: 150%;
+    }
+    .logo {
+        margin-top: 5px;
+        margin-left: 2px;
+    
+        
+           }
+        .item {
+            background: rgba(0, 0, 0, 0);
+        }
 
+.scroll-content {
+    overflow-y: hidden !important;
+}
+ion-input {
+    font-size: 0.9em;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+ion-label {
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+}
+
+.signup-col {
+    margin-top: 20px;
+    margin-left: 100px
+}
+
+
+ion-header {
+    background: transparent;
+}
+
+ion-icon {
+    color: rgb(255, 255, 255);
+}
+.toolbar-background {
+    background-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+.back-button-icon-md {
+    color: rgb(255, 255, 255);
+  }
 }
