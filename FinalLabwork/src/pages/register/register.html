@@ -8,14 +8,13 @@
 -->
 <ion-header>
     <ion-navbar>
-                <ion-icon class="icon-only" ></ion-icon>
+        <ion-icon class="icon-only" ></ion-icon>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding class="bg-image">
 
     <img src="assets/imgs/register.png" class="logo"/>
-  
 
 
   <ion-item>
@@ -28,10 +27,8 @@
     <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
   </ion-item>
           
-    <ion-row>
-      <ion-col class="signup-col">
-        <button ion-button class="submit-btn" color="danger" round (click)="register(user)">Sign in</button>
-      </ion-col>
-    </ion-row>
+  <div text-center style="margin-top: 20px">
+    <button ion-button class="submit-btn" color="danger" round (click)="register(user)">Sign in</button>
+  </div>
 </ion-content>
 

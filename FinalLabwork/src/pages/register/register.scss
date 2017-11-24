@@ -1,17 +1,18 @@
 page-register {
-    .bg-image {
-        background-image: url('../assets/imgs/fondbleu.png');
-        background-size: 150%;
-    }
-    .logo {
-        margin-top: 5px;
-        margin-left: 2px;
     
-        
-           }
-        .item {
-            background: rgba(0, 0, 0, 0);
-        }
+.bg-image {
+    background-color: #6666ff;
+}
+    
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto        
+}
+
+.item {
+    background: rgba(0, 0, 0, 0);
+}
 
 .scroll-content {
     overflow-y: hidden !important;
@@ -29,9 +30,10 @@ ion-label {
 
 .signup-col {
     margin-top: 20px;
-    margin-left: 100px
+    margin-left: auto;
+    margin-right: auto;
+    display: block
 }
-
 
 ion-header {
     background: transparent;
