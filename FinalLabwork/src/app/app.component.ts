@@ -6,6 +6,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 
+/**
+ * Claire Gizard -- 1106363
+ * Pierre Munin -- 1106420
+ */
+
 @Component({
   templateUrl: 'app.html'
 })

@@ -4,7 +4,10 @@ import { TabsPage } from '../tabs/tabs';
 import { User } from '../../models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 
-
+/**
+ * Claire Gizard -- 1106363
+ * Pierre Munin -- 1106420
+ */
 @IonicPage()
 @Component({
   selector: 'page-register',

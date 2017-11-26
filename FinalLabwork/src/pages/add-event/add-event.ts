@@ -4,12 +4,9 @@ import {Event} from '../../models/event';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 
 /**
- * Generated class for the AddEventPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * Claire Gizard -- 1106363
+ * Pierre Munin -- 1106420
  */
-
 @IonicPage()
 @Component({
   selector: 'page-add-event',

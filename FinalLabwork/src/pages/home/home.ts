@@ -3,13 +3,17 @@ import { NavController } from 'ionic-angular';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database-deprecated';
 import { FirebaseProvider } from '../../providers/firebase/firebase';
 
+/**
+ * Claire Gizard -- 1106363
+ * Pierre Munin -- 1106420
+ */
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
   newItem = '';
-  eventList: FirebaseListObservable<any[]>;
+  eventList;
   
    constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
      this.eventList = this.firebaseProvider.getEventList();
