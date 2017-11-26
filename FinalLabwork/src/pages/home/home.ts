@@ -13,6 +13,7 @@ export class HomePage {
   
    constructor(public navCtrl: NavController, public firebaseProvider: FirebaseProvider) {
      this.eventList = this.firebaseProvider.getEventList();
+     console.log(this.eventList);
    }
   
    addEventPage() {

@@ -15,7 +15,13 @@ export class FirebaseProvider {
   }
 
   getEventList() {
-    return this.afd.list('/events/');
+    this.afd.list('/events/', { preserveSnapshot: true})
+      .subscribe(snapshots=>{
+        snapshots.forEach(snapshot => {
+          console.log(snapshot.key, snapshot.val());
+          return snapshots;
+        });
+    })
   }
  
   addItem(name) {
