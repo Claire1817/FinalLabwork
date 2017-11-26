@@ -15,6 +15,9 @@ import { LoginPage } from '../pages/login/login';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireModule } from 'angularfire2';
 import { Facebook } from '@ionic-native/facebook'
+import { FirebaseProvider } from '../providers/firebase/firebase';
+import { HttpModule } from '@angular/http';
+import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated';
 
 /* 
 Pierre Munin 1106420
@@ -42,8 +45,10 @@ var firebaseConfig = {
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,    
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -58,7 +63,8 @@ var firebaseConfig = {
     StatusBar,
     Facebook,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FirebaseProvider
   ]
 })
 export class AppModule {}
