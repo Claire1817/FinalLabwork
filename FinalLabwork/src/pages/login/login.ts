@@ -4,6 +4,7 @@ import { TabsPage } from '../tabs/tabs';
 import { User } from '../../models/user';
 import { Facebook } from '@ionic-native/facebook';
 import { AngularFireAuth } from 'angularfire2/auth';
+import firebase from 'firebase';
 
 /**
  * Claire Gizard -- 1106363
@@ -51,7 +52,8 @@ export class LoginPage {
 /**
  * function to login with facebook
  */
-  /**public loginWithFacebook() {
+
+public loginWithFacebook() {
     this.facebook.login(['email']).then( (response) => {
       const facebookCredential = firebase.auth.FacebookAuthProvider
         .credential(response.authResponse.accessToken);
@@ -67,5 +69,5 @@ export class LoginPage {
       });
 
     }).catch((error) => { console.log("ERROR" + error) });
-  }*/
+  }
 }
